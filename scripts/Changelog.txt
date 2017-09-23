@@ -1,0 +1,9 @@
+====== Version 2.0 - 9/15/2017 =====
+- Split the scripts into multiple folders
+- Added DateRange block
+- Added MatchDate block
+- Added MatchDayOfWeek block
+- Added Now block
+- Added USHolidays block
+- Added "about" output to Clock block
+- Changed Clock Block to use "now" Datetime input instead of using the system clock directly 
