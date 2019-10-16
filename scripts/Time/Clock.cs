@@ -3,11 +3,14 @@ using Scripting;
 
 public static class Clock
 {
+	public static DateTime initTime=DateTime.Now;
+	
     public static void Run(
 			DateTime now,
 			out int hour_24h, out int hour_12h, out int minute, out int second, 
 			out double hourAngle, out double minuteAngle, out double secondAngle, 
 			out string formattedDateTime,
+			out double ms,
 			out string about,
 			string dateTimeFormat = "h:m"
 		)
@@ -15,9 +18,10 @@ public static class Clock
 		
         hour_24h = now.Hour;
 		hour_12h = Convert.ToInt32( now.ToString("hh"));
-		
+
 		minute = now.Minute;
 		second = now.Second;
+		ms = getMs();
 		hourAngle =  (double)(hour_12h) / 12.0 * 360.0;
 		minuteAngle = (double)(minute) / 60.0 * 360.0;
 		secondAngle = (double)(second) / 60.0 * 360.0;
@@ -40,4 +44,15 @@ public static class Clock
 		
 		
     }
+	
+	private static double getMs(){
+		if(initTime==null){
+			Logger.Info("Creating base datetime");
+			initTime = DateTime.Now;
+			return 0;
+		}
+		
+		System.TimeSpan timeDiff = DateTime.Now - initTime;
+		return Math.Round(timeDiff.TotalMilliseconds);
+	}
 }
