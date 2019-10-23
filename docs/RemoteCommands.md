@@ -25,7 +25,7 @@ Whitespace such as carriage returns, newlines, and spaces at the end of the comm
 Set the opacity level of the show grandmaster.
 
 The level value is a floating point number between 0 and 100;
-### Example: 
+**Example:**
 ```
 /sequence/Sequence_1/level/50
 ```
@@ -34,28 +34,29 @@ The level value is a floating point number between 0 and 100;
 ## /sequence/\<sequence_identifier>/start
 Start a sequence from the beggining.
 
-### Example: 
+**Example:**
 ```
 /sequence/Sequence_1/start
 ```
 
 ## /sequence/\<sequence_identifier>/stop
 Stop a sequence completely.
-### Example: 
+
+**Example:**
 ```
 /sequence/Sequence_1/stop
 ```
 
 ## /sequence/\<sequence_identifier>/pause
 Pause a sequence
-### Example: 
+**Example:**
 ```
 /sequence/Sequence_1/pause
 ```
 
 ## /sequence/\<sequence_identifier>/continue
 Continue a sequence after pausing
-### Example: 
+**Example:**
 ```
 /sequence/Sequence_1/continue
 ```
@@ -64,7 +65,7 @@ Continue a sequence after pausing
 Set the opacity level of a sequence.
 
 The level value is a floating point number between 0 and 100;
-### Example: 
+**Example:**
 ```
 /sequence/Sequence_1/level/50
 ```
