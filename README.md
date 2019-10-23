@@ -29,3 +29,4 @@ Blocks that work with specific SYMPHOLIGHT Objects (Sequences, Cues, Effects, et
  
 ### Keys
 Some of the blocks in this library,Â including the Counter andÂ LimitedIncrement blocks, must keep track of a value between runs of the script. Due to the way that the blocks must be written, each instance of a block will use the same memory location to track values.Â Because of this, multiple instances of the same block type would override the value of the others of the same type when it is run. In order to avoid this, a unique key can be provided for each instance of the block. This willÂ allow the block to access its own separate memory location, enabling multiple instances of the same block to be used without them interfering with each other. The key is simply a string(text) value that must be different for each instance of that block type. 
+

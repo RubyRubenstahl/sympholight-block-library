@@ -1,15 +1,15 @@
 # RemoteCommands
 
 
-## Description
 RemoteCommands receives commands as raw text in a URL style format. It is primarily intended for use with the UDP, RS232, and RS485 blocks, but can be used with any text input. 
 
 The code for the script can be found [here](../scripts/Network/RemoteCommands.cs)
 
-## Ports
-| name    | input type | description                                                    |
-| ------- | ---------- | -------------------------------------------------------------- |
-| command | string     | The command to run. Make sure to set the Port mode to "Active" |
+## Input Ports
+#### \<String>   command 
+  The command to run. 
+  
+  Make sure to set the Port mode to "Active"
 
 ## Usage
 Commands are sent in a URL style format. For example, the following command will start a sequence. 
@@ -25,6 +25,7 @@ Whitespace such as carriage returns, newlines, and spaces at the end of the comm
 Set the opacity level of the show grandmaster.
 
 The level value is a floating point number between 0 and 100;
+
 **Example:**
 ```
 /sequence/Sequence_1/level/50
@@ -49,6 +50,7 @@ Stop a sequence completely.
 
 ## /sequence/\<sequence_identifier>/pause
 Pause a sequence
+
 **Example:**
 ```
 /sequence/Sequence_1/pause
@@ -56,6 +58,7 @@ Pause a sequence
 
 ## /sequence/\<sequence_identifier>/continue
 Continue a sequence after pausing
+
 **Example:**
 ```
 /sequence/Sequence_1/continue
@@ -65,6 +68,7 @@ Continue a sequence after pausing
 Set the opacity level of a sequence.
 
 The level value is a floating point number between 0 and 100;
+
 **Example:**
 ```
 /sequence/Sequence_1/level/50
