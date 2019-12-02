@@ -9,7 +9,7 @@ The code for the script can be found [here](../scripts/Network/RemoteCommands.cs
 #### \<String>   command 
   The command to run. 
   
-  Make sure to set the Port mode to "Active"
+>  **!!!! Important !!!!** Make sure to set the Port mode to **"Passive"** otherwise your commands will not run properly. 
 
 ## Usage
 Commands are sent in a URL style format. For example, the following command will start a sequence. 
