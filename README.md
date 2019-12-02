@@ -21,7 +21,9 @@ There are a couple of things to know in order to use the blocks included in this
 
 There are 2 ways to set values on input ports in the block library. By default, inputs are set to `Property` mode. In this mode, you set the value on the port by selecting the block and manually entering the value in the property window for the block. 
 
-In order to allow you to take values in from other blocks, you must change the Input Type setting from `Property` to `Port`. When you do this, the circle at the input port on the block will show a thin line instead of a thick line to indicate that it is available for input. Once you do this, you can connect it to the output of another block with a compatible data type.  
+In order to allow you to take values in from other blocks, you must change the Input Type setting from `Property` to `Port`. When you do this, the circle at the input port on the block will show a thin line instead of a thick line to indicate that it is available for input. Once you do this, you can connect it to the output of another block with a compatible data type.
+
+> **Troubleshooting tip**: If your commands aren't running right, make sure the port is set to **Passive** mode. This will make sure that the block script is run every time new data arrives. Otherwise, data will only be processed if the script is triggered manually. 
 
 ### Identifiers (id)
 Blocks that work with specific SYMPHOLIGHT Objects (Sequences, Cues, Effects, etc) have anÂ idÂ input.Â The identifier is a unique name that you must set for the object that you want to access. Please read this article to get an understanding of what identifiers are and how they work
